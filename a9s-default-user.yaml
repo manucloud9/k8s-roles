@@ -99,6 +99,7 @@ rules:
   - runtimeclasses
   - selfsubjectaccessreviews
   - selfsubjectrulesreviews
+  - secrets
   - statefulsets
   - statefulsets/scale
   - statefulsets/status
