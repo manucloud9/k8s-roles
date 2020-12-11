@@ -1,0 +1,101 @@
+master/70d30cb3-20c5-4dd2-9fb5-c9c9839c245f:~/k8ss_secrets/labels# kubectl describe ManuPods podrestriction
+Name:         podrestriction
+Namespace:
+Labels:       <none>
+Annotations:  <none>
+API Version:  constraints.gatekeeper.sh/v1beta1
+Kind:         ManuPods
+Metadata:
+  Creation Timestamp:  2020-12-11T10:05:30Z
+  Generation:          1
+  Resource Version:    2632963
+  Self Link:           /apis/constraints.gatekeeper.sh/v1beta1/manupods/podrestriction
+  UID:                 95ab16a9-ca1f-4f3e-8241-003a666ce788
+Spec:
+  Match:
+    Kinds:
+      API Groups:
+
+      Kinds:
+        Pod
+Status:
+  Audit Timestamp:  2020-12-11T10:36:53Z
+  By Pod:
+    Constraint UID:       95ab16a9-ca1f-4f3e-8241-003a666ce788
+    Enforced:             true
+    Id:                   gatekeeper-audit-54d56fdb9d-c6bxs
+    Observed Generation:  1
+    Operations:
+      audit
+      status
+    Constraint UID:       95ab16a9-ca1f-4f3e-8241-003a666ce788
+    Enforced:             true
+    Id:                   gatekeeper-controller-manager-87c45f4f7-c5zbx
+    Observed Generation:  1
+    Operations:
+      webhook
+    Constraint UID:       95ab16a9-ca1f-4f3e-8241-003a666ce788
+    Enforced:             true
+    Id:                   gatekeeper-controller-manager-87c45f4f7-dsfrj
+    Observed Generation:  1
+    Operations:
+      webhook
+    Constraint UID:       95ab16a9-ca1f-4f3e-8241-003a666ce788
+    Enforced:             true
+    Id:                   gatekeeper-controller-manager-87c45f4f7-mz4f7
+    Observed Generation:  1
+    Operations:
+      webhook
+  Total Violations:  10
+  Violations:
+    Enforcement Action:  deny
+    Kind:                Pod
+    Message:             Can not create Pods in kube-system namespace
+    Name:                coredns-54b9777bfc-9tc7c
+    Namespace:           kube-system
+    Enforcement Action:  deny
+    Kind:                Pod
+    Message:             Can not create Pods in kube-system namespace
+    Name:                coredns-54b9777bfc-rmwrq
+    Namespace:           kube-system
+    Enforcement Action:  deny
+    Kind:                Pod
+    Message:             Can not create Pods in kube-system namespace
+    Name:                coredns-54b9777bfc-t4q7j
+    Namespace:           kube-system
+    Enforcement Action:  deny
+    Kind:                Pod
+    Message:             Can not create Pods in kube-system namespace
+    Name:                ebs-csi-controller-587cb4db9b-wrmm9
+    Namespace:           kube-system
+    Enforcement Action:  deny
+    Kind:                Pod
+    Message:             Can not create Pods in kube-system namespace
+    Name:                ebs-csi-controller-587cb4db9b-wz28d
+    Namespace:           kube-system
+    Enforcement Action:  deny
+    Kind:                Pod
+    Message:             Can not create Pods in kube-system namespace
+    Name:                ebs-csi-node-nq26s
+    Namespace:           kube-system
+    Enforcement Action:  deny
+    Kind:                Pod
+    Message:             Can not create Pods in kube-system namespace
+    Name:                ebs-csi-node-zp727
+    Namespace:           kube-system
+    Enforcement Action:  deny
+    Kind:                Pod
+    Message:             Can not create Pods in kube-system namespace
+    Name:                metrics-server-5df78f85b-6g9xn
+    Namespace:           kube-system
+    Enforcement Action:  deny
+    Kind:                Pod
+    Message:             Can not create Pods in kube-system namespace
+    Name:                nginx-86c57db685-4tqjl
+    Namespace:           kube-system
+    Enforcement Action:  deny
+    Kind:                Pod
+    Message:             Can not create Pods in kube-system namespace
+    Name:                ubuntu-85b64f87f8-wglt9
+    Namespace:           kube-system
+Events:                  <none>
